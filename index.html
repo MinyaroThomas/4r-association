@@ -1,173 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <head>
+    <!-- Add this line -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4R Association</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="description" content="4R Association - Professional services for TRA, BRELLA, and LATRA registrations in Tanzania">
+    <meta name="keywords" content="TRA, BRELLA, LATRA, vehicle registration, company registration, business services, Tanzania">
 </head>
 <body>
+    <!-- Cool Navigation Bar -->
     <header>
-        <h1>Welcome to 4R Association</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="banner">
+    <!-- Big Welcome Banner -->
+    <!-- In your banner section -->
+    <div class="banner" id="home">
         <div class="banner-content">
-            <h2>Building Better Communities Together</h2>
-            <p>Empowering Change Through Innovation</p>
+            <h1 class="animate-text">Welcome to 4R Association</h1>
+            <p class="animate-text-delay">Building a better future together</p>
         </div>
     </div>
 
     <main>
-        <section id="home">
-            <h2>Our Mission</h2>
-            <p>At 4R Association, our mission is to empower communities through innovative solutions and sustainable development. We are committed to fostering positive change and creating lasting impact in society.</p>
-            
-            <div class="vision-values">
-                <h3>Our Vision</h3>
-                <p>To be a leading force in community development, creating opportunities and building bridges for a better tomorrow.</p>
-                
-                <h3>Core Values</h3>
-                <ul>
-                    <li>Integrity and Transparency</li>
-                    <li>Community Excellence</li>
-                    <li>Innovation and Adaptability</li>
-                    <li>Sustainable Development</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="about">
+        <!-- About Section -->
+        <section id="about" class="fade-in">
             <h2>About Us</h2>
-            <p>Established as a forward-thinking organization, 4R Association has been at the forefront of community development and sustainable solutions. Our team of dedicated professionals brings together diverse expertise and experience to serve our community better.</p>
-            
-            <div class="achievements">
-                <h3>Our Journey</h3>
-                <p>We have successfully implemented numerous projects that have positively impacted communities across various sectors. Our approach combines traditional wisdom with modern innovation to create sustainable solutions.</p>
+            <div class="about-content">
+                <p>We are dedicated to making positive changes in our community.</p>
             </div>
         </section>
 
+        <!-- Services Section -->
         <section id="services">
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <h3>Community Development</h3>
-                    <p>Implementing sustainable community projects and initiatives</p>
+                    <i class="fas fa-car service-icon"></i>
+                    <h3>TRA</h3>
+                    <ul class="service-list">
+                        <li>Motor vehicle registration</li>
+                        <li>Change of ownership motor vehicle</li>
+                        <li>Change particular motor vehicle</li>
+                        <li>Motor vehicle duplicate registration cards</li>
+                        <li>Add/remove of title holder</li>
+                        <li>Tax assessments of company and business</li>
+                        <li>Processing driving licence (DL)</li>
+                    </ul>
                 </div>
                 <div class="service-item">
-                    <h3>Consulting Services</h3>
-                    <p>Professional guidance and strategic planning for organizations</p>
+                    <i class="fas fa-building service-icon"></i>
+                    <h3>BRELLA</h3>
+                    <ul class="service-list">
+                        <li>Company registration</li>
+                        <li>Trade mark registration</li>
+                        <li>Business names registration</li>
+                        <li>Filling annual returns</li>
+                        <li>Updating company informations</li>
+                    </ul>
                 </div>
                 <div class="service-item">
-                    <h3>Training Programs</h3>
-                    <p>Capacity building and skill development workshops</p>
-                </div>
-                <div class="service-item">
-                    <h3>Project Management</h3>
-                    <p>End-to-end project planning and execution</p>
+                    <i class="fas fa-truck service-icon"></i>
+                    <h3>LATRA</h3>
+                    <ul class="service-list">
+                        <li>LATRA activities</li>
+                        <li>LATRA licence registration</li>
+                        <li>etc</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
- 
-<section id="gallery">
-    <h2>Our Projects Gallery</h2>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="images/consulting1.jpg" alt="Consulting Services">
-            <div class="gallery-caption">Professional Consulting</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/talent1.jpg" alt="Talent Development">
-            <div class="gallery-caption">Talent Development Programs</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/community1.jpg" alt="Community Projects">
-            <div class="gallery-caption">Community Engagement</div>
-        </div>
-</section>
-
-        <section id="news">
-            <h2>Latest Updates</h2>
-            <div class="news-grid">
-                <div class="news-item">
-                    <h3>Community Project Launch</h3>
-                    <p class="date">January 15, 2024</p>
-                    <p>Launching new initiatives to support local development.</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
-                <div class="news-item">
-                    <h3>Upcoming Workshop</h3>
-                    <p class="date">February 1, 2024</p>
-                    <p>Join us for our capacity building workshop.</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
-            </div>
-        </section>
-
+        <!-- Contact Form -->
         <section id="contact">
             <h2>Contact Us</h2>
             <div class="contact-container">
                 <div class="contact-info">
-                    <p><strong>Email:</strong> 4rsassociationenterprises@gmail.com</p>
-                    <p><strong>Phone Numbers:</strong></p>
-                    <ul>
-                        <li>+255 688 805 268</li>
-                        <li>0222111486</li>
-                    </ul>
-                    <p><strong>Location:</strong> Ami building, 1st Floor, Samora/Mkwepu</p>
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-envelope"></i> 4rsassociationenterprises@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
                 </div>
-                <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
             </div>
         </section>
-
-    <section id="social">
-    <h2>Connect With Us</h2>
-    <div class="social-links">
-        <a href="https://facebook.com/4RAssociation" target="_blank" class="social-btn">
-            <i class="fab fa-facebook-f"></i> Facebook
-        </a>
-        <a href="https://twitter.com/4RAssociation" target="_blank" class="social-btn">
-            <i class="fab fa-twitter"></i> Twitter
-        </a>
-        <a href="https://linkedin.com/company/4r-association" target="_blank" class="social-btn">
-            <i class="fab fa-linkedin-in"></i> LinkedIn
-        </a>
-        <a href="https://instagram.com/4RAssociation" target="_blank" class="social-btn">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
-    </div>
-</section>
     </main>
 
     <footer>
-        <p>&copy; 2025 4R's Association Enterprises. All rights reserved.</p>
+        <p>&copy; 2025 4R Association. All rights reserved by Minyaro Juma Thomas Chamoto.</p>
     </footer>
 
     <script src="script.js"></script>
