@@ -62,7 +62,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #3498db;
 }
-
 .banner {
     background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1497366216548-37526070297c');
     background-color: #2c3e50;
@@ -177,16 +176,281 @@ footer {
     .contact-container {
         grid-template-columns: 1fr;
     }
-    
     .banner {
         height: 300px;
     }
-    
     .banner-content h1 {
         font-size: 2em;
     }
-    
     nav ul li {
         margin: 0 0.5rem;
     }
+}
+/* Service item hover effects */
+.service-item {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.service-icon {
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-icon {
+    transform: scale(1.1);
+    color: #3498db;
+}
+
+/* Form interactions */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85em;
+    margin-top: 5px;
+    animation: slideIn 0.3s ease;
+}
+
+.success-message {
+    background: #2ecc71;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    animation: slideIn 0.3s ease;
+}
+
+.error {
+    border-color: #e74c3c !important;
+}
+
+.submit-btn.success {
+    background: #2ecc71;
+}
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #3498db;
+    z-index: 9999;
+    transition: width 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.banner-content h2 {
+    font-size: 2em;
+}
+nav ul li {
+    margin: 0 0.5rem;
+}
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 6px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+.submit-btn {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.submit-btn:hover {
+    background: #34495e;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.social-btn i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+.social-btn:hover {
+    background: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.gallery-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* Fix media query at the end of the file */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    .banner {
+        height: 300px;
+    }
+    .banner-content h1 {
+        font-size: 2em;
+    }
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+}
+/* Service item hover effects */
+.service-item {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.service-icon {
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-icon {
+    transform: scale(1.1);
+    color: #3498db;
+}
+
+/* Form interactions */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Button animations */
+.submit-btn {
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
+}
+.reveal-fade {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.reveal-slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+}
+.reveal-slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease;
+}
+.reveal-active {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Pulse animation for service icons */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.service-icon:hover {
+    animation: pulse 1s infinite;
+}
+
+/* Form success animation */
+@keyframes formSuccess {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.form-success {
+    animation: formSuccess 0.5s ease;
+    border-color: #2ecc71 !important;
+}
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation hover effects */
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3498db;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
